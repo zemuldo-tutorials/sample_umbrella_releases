@@ -6,7 +6,25 @@ defmodule SampleUmbrellaReleases.MixProject do
       apps_path: "apps",
       version: "0.1.0",
       start_permanent: Mix.env() == :prod,
-      deps: deps()
+      deps: deps(),
+      releases: [
+        app_1_only: [
+          applications: [
+            app_1: :permanent
+          ]
+        ],
+        app_2_only: [
+          applications: [
+            app_2: :permanent
+          ]
+        ],
+        all_apps: [
+          applications: [
+            app_1: :permanent,
+            app_2: :permanent
+          ]
+        ]
+      ]
     ]
   end
 
