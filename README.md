@@ -1,4 +1,3 @@
 # SampleUmbrellaReleases
 
 **TODO: Add description**
-
